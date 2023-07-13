@@ -11,7 +11,7 @@ class speechApi {
                             window.webkitSpeechRecognition
         this.speechApi = new SpeechToText()
         this.output = textarea.output
-        this.speechApi.continuos = true
+        this.speechApi.continuous = true
         this.speechApi.lang = 'pt-BR'
 
         this.speechApi.onresult = e => {
