@@ -62,7 +62,7 @@ btnBaixarDoc.addEventListener('click', () => {
 function download(text, filename) {
     var element = document.createElement('a')
 
-    element.setAttribute('href', 'data:text/plaincharset-utf-8' +
+    element.setAttribute('href', 'data:text/plaincharset=utf-8' +
     encodeURIComponent(text))
 
     element.setAttribute('download', filename)
