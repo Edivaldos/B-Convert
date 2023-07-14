@@ -73,7 +73,7 @@ btnBaixarPDF.addEventListener('click', () => {
     // Conteúdo do PDF
     //doc.setFontStyle('bold').setFontSize(12).text(titulo + "\n" + linhas + "\n", 10, 10);
     //quebrar linhas
-    var linhas = doc.splitTextToSize(text, 100);
+    var linhas = doc.splitTextToSize(titulo, text, 100);
     //doc.text(linhas, 10, 10)
 
     doc.setFontStyle('bold').setFontSize(12).text(linhas, 10, 10);
