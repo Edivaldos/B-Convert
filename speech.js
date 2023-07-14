@@ -33,6 +33,20 @@ class speechApi {
 
 var speech = new speechApi()
 
+var titulo = ("Fala convertida em texto com o B-Convert");
+
+
+    btnParar.disabled = true
+    btnBaixarPDF.disabled = true
+    btnBaixarDoc.disabled = true
+    btnLimpar.disabled = true
+
+textarea.addEventListener('click', () => {    
+    btnBaixarPDF.disabled = false
+    btnBaixarDoc.disabled = false
+    btnLimpar.disabled = false
+})
+
 btnGravar.addEventListener('click', () => {
     btnGravar.disabled = true;
     btnParar.disabled = false;
@@ -42,27 +56,45 @@ btnGravar.addEventListener('click', () => {
 btnParar.addEventListener('click', () => {
     btnGravar.disabled = false;
     btnParar.disabled = true;
+    btnBaixarPDF.disabled = false
+    btnBaixarDoc.disabled = false
+    btnLimpar.disabled = false
+
     speech.stop()
 })
 
 btnBaixarPDF.addEventListener('click', () => {
     var text = textarea.value
-    var filename = 'B-Convert.pdf'
+    //var filename = "B-Convert.pdf"
 
-    download(text, filename)
+    // Instanciar o jsPDF
+    var doc = new jsPDF();
+    
+    // Conteúdo do PDF
+    doc.setFontStyle('bold').setFontSize(12).text(titulo + "\n" + text + "\n", 10, 10);
+    // Nomear e salvar PDF
+    doc.save('B-Convert.pdf');
+
+    //download(doc, filename)
+    
+    btnBaixarDoc.disabled = true
+    btnBaixarPDF.disabled = true
 })
 
 btnBaixarDoc.addEventListener('click', () => {
     var text = textarea.value
-    var filename = 'B-Convert.doc'
+    var filename = "B-Convert.doc"
 
-    download(text, filename)
+    download(titulo + "\n\n" + text, filename)
+
+    btnBaixarPDF.disabled = true
+    btnBaixarDoc.disabled = true
 })
 
 function download(text, filename) {
     var element = document.createElement('a')
 
-    element.setAttribute('href', 'data:text/plaincharset=utf-8' +
+    element.setAttribute('href', 'data:text/plaincharset=UTF-8,' +
     encodeURIComponent(text))
 
     element.setAttribute('download', filename)
@@ -80,5 +112,8 @@ btnLimpar.addEventListener('click', () => {
     textarea.value = ""
     btnGravar.disabled = false
     btnParar.disabled = true
+    btnBaixarPDF.disabled = true
+    btnBaixarDoc.disabled = true
+    btnLimpar.disabled = true
     speech.stop()
 })

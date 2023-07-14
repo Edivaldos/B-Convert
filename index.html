@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,14 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/cf6fa412bd.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div class="speech">
         <p>Conversor de Voz em Texto</p>
+
+        <p id="msg">Fale ou escreva o que quiser.
+            Depois salve em .doc ou .PDF</p>
+
         <textarea id="textarea"></textarea>
 
         <div>
@@ -18,10 +24,15 @@
             <button id="btnParar"><i class="fas fa-microphone-slash"></i></button>
             <button id="btnBaixarPDF"><i class="fas fa-solid fa-file-pdf"></i></button>
             <button id="btnBaixarDoc"><i class="fas fa-solid fa-file-word"></i></button>
-            <button id="btnLimpar"><i class="fas fa-trash-alt"></i></button>        
+            <button id="btnLimpar"><i class="fas fa-trash-alt"></i></button>
         </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"
+        integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/"
+        crossorigin="anonymous"></script>
+
     <script src="speech.js"></script>
 </body>
+
 </html>
