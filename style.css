@@ -12,32 +12,42 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #22438c;
+    background-color: #66e9a3;
 }
 
 p {
     color: #f0ffff;
     font-size: 3rem;
+    margin-top: 0px;
     font-family: 'Times New Roman', Times, serif;
 }
 
 #msg {
     color: #0c0e0c;
     font-size: 2rem;
+    margin-top: 0px;
     padding-bottom: 0;
-    padding-top: 2rem;
+    padding-top: 1rem;
     text-align: center;
+}
+
+#img-logo {
+    position: relative;
+    margin: 0;
+    padding: 0;
 }
 
 textarea {
     width: 80%;
     height: 50%;
-    margin: 50px auto;
+    margin: 20px auto;
     padding: 1rem;
     border: none;
+    border-radius: 8px;
     outline: 0;
+    font-size: 150%;
     text-align: justify;
-    background-color: #000000;
+    background-color: #171616;
     color: #32ee2b;
 }
 
@@ -64,11 +74,17 @@ button {
     border-radius: 50%;
 }
 
-button:hover {
+button:not(:disabled):hover {
     background-color: #32ee2b;
+    .fa-trash-alt {
+        color: #ff3300;
+    }
+    .fa-file-word {
+        color: #073fba;
+    }
 }
 
-.fa-trash-alt {
+.fa-trash-alt:disabled:hover {
     color: red;    
 }
 

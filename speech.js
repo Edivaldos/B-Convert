@@ -73,10 +73,10 @@ btnBaixarPDF.addEventListener('click', () => {
     // Conteúdo do PDF
     //doc.setFontStyle('bold').setFontSize(12).text(titulo + "\n" + linhas + "\n", 10, 10);
     //quebrar linhas
-    var linhas = doc.splitTextToSize(text, 200);
+    var linhas = doc.splitTextToSize(titulo + "\n\n" + text, 260);
     //doc.text(linhas, 10, 10)
 
-    doc.setFontStyle('bold').setFontSize(12).text(linhas, 10, 10);
+    doc.setFontSize(12).text(linhas, 16, 16);
     
     // Nomear e salvar PDF
     doc.save('B-Convert.pdf');
