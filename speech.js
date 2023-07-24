@@ -31,6 +31,23 @@ class speechApi {
     }
 }
 
+function verificarMicrofone() {
+  // Verifica se o navegador suporta a API Web Audio
+  if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+    // Solicita permissão para acessar o microfone
+    navigator.mediaDevices.getUserMedia({ audio: true })
+      .then(function(stream) {
+        console.log('Microfone está capturando o áudio.');
+        // Faça algo com o áudio capturado, se necessário
+      })
+      .catch(function(error) {
+        console.log('Não foi possível acessar o microfone:', error);
+      });
+  } else {
+    console.log('API Web Audio não suportada pelo navegador.');
+  }
+}
+
 var speech = new speechApi()
 
 var titulo = ("Fala convertida em texto com o B-Convert");
