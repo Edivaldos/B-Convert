@@ -12,7 +12,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #4682B4;
+    background-color: #66e9a3;
 }
 
 p {
@@ -75,23 +75,13 @@ button {
 }
 
 button:not(:disabled):hover {
-    background-color: #00FFFF;
+    background-color: #32ee2b;
     .fa-trash-alt {
         color: #ff3300;
     }
     .fa-file-word {
         color: #073fba;
     }
-}
-
-#logo {
-    width: 100px;
-    height: 100px;
-}
-
-#imgLogo {
-    width: 100px;
-    height: 100px;
 }
 
 .fa-trash-alt:disabled:hover {

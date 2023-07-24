@@ -48,6 +48,7 @@ textarea.addEventListener('click', () => {
 })
 
 btnGravar.addEventListener('click', () => {
+    btnGravar.disabled = true;
     btnParar.disabled = false;
     speech.start()
 })
