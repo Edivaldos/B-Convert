@@ -84,7 +84,7 @@ button:not(:disabled):hover {
     }
 }
 
-#imgLogo {
+#nomeApp {
     width: 100px;
     height: 100px;
 }
@@ -92,6 +92,7 @@ button:not(:disabled):hover {
 #logo {
     width: 100px;
     height: 100px;
+    display: inline-block;
 }
 
 .fa-trash-alt:disabled:hover {
