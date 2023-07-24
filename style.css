@@ -84,6 +84,12 @@ button:not(:disabled):hover {
     }
 }
 
+div {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
 .fa-trash-alt:disabled:hover {
     color: red;    
 }
