@@ -97,6 +97,7 @@ button:not(:disabled):hover {
 #imgLogo {
     width: 100px;
     height: 100px;
+    display: flex;
 }
 
 .fa-trash-alt:disabled:hover {
