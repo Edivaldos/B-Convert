@@ -87,13 +87,11 @@ button:not(:disabled):hover {
 #imgApp {
     width: 100px;
     height: 100px;
-    display: inline-block;
 }
 
 #nomeApp {
-    width: 100px;
-    height: 100px;
-    display: inline-block;
+    width: 100%;
+    height: 100%;
 }
 
 #logo {
