@@ -46,6 +46,7 @@ function verificarMicrofone() {
   } else {
     console.log('API Web Audio não suportada pelo navegador.');
   }
+    btnGravar.disabled = true;
 }
 
 var speech = new speechApi()
