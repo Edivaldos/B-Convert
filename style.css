@@ -84,7 +84,7 @@ button:not(:disabled):hover {
     }
 }
 
-#nomeApp {
+#nome {
     width: 100px;
     height: 100px;
 }
