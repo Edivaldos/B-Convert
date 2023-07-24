@@ -84,12 +84,12 @@ button:not(:disabled):hover {
     }
 }
 
-#nome {
+#nomeApp {
     width: 100px;
     height: 100px;
 }
 
-#logo {
+#imgLogo {
     width: 100px;
     height: 100px;
     display: inline-block;
