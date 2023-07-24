@@ -87,11 +87,6 @@ button:not(:disabled):hover {
 #logo {
     width: 100px;
     height: 100px;
-    display: flex;
-}
-
-#nomeApp {
-    text-color: red;
 }
 
 #imgLogo {
