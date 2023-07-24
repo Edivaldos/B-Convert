@@ -37,7 +37,7 @@ function verificarMicrofone() {
     // Solicita permissão para acessar o microfone
     navigator.mediaDevices.getUserMedia({ audio: true })
       .then(function(stream) {
-        console.log('Microfone está capturando o áudio.');
+        // console.log('Microfone está capturando o áudio.');
         // Faça algo com o áudio capturado, se necessário
       })
       .catch(function(error) {
@@ -46,7 +46,6 @@ function verificarMicrofone() {
   } else {
     console.log('API Web Audio não suportada pelo navegador.');
   }
-    btnGravar.disabled = true;
 }
 
 var speech = new speechApi()
