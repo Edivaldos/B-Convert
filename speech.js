@@ -65,6 +65,7 @@ textarea.addEventListener('click', () => {
 })
 
 btnGravar.addEventListener('click', () => {
+    verificarMicrofone();
     btnGravar.disabled = true;
     btnParar.disabled = false;
     speech.start()
