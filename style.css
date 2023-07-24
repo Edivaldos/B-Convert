@@ -84,11 +84,10 @@ button:not(:disabled):hover {
     }
 }
 
-#nomeApp {
+#logo {
     width: 100px;
     height: 100px;
     display: flex;
-    text-color: red;
 }
 
 #nomeApp {
