@@ -84,7 +84,7 @@ button:not(:disabled):hover {
     }
 }
 
-#imgApp {
+#imgLogo {
     width: 100px;
     height: 100px;
     display: inline-block;
