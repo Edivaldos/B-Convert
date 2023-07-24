@@ -39,7 +39,7 @@ function verificarMicrofone() {
       .then(function(stream) {
         console.log('Microfone está capturando o áudio.');
         // Faça algo com o áudio capturado, se necessário
-          btnGravar.disabled = true;
+          btnGravar.disabled = false;
       })
       .catch(function(error) {
         console.log('Não foi possível acessar o microfone:', error);
