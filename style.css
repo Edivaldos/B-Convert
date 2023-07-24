@@ -91,6 +91,10 @@ button:not(:disabled):hover {
     text-color: red;
 }
 
+#nome {
+    text-color: red;
+}
+
 #imgLogo {
     width: 100px;
     height: 100px;
