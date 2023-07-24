@@ -34,7 +34,7 @@ p {
 #img-logo {
     position: relative;
     margin: 0;
-    padding: 2;
+    padding: 0;
 }
 
 textarea {
