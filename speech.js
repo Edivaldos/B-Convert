@@ -39,7 +39,6 @@ function verificarMicrofone() {
       .then(function(stream) {
         console.log('Microfone está capturando o áudio.');
         // Faça algo com o áudio capturado, se necessário
-          btnGravar.disabled = false;
       })
       .catch(function(error) {
         console.log('Não foi possível acessar o microfone:', error);
@@ -47,6 +46,7 @@ function verificarMicrofone() {
   } else {
     console.log('API Web Audio não suportada pelo navegador.');
   }
+    btnGravar.disabled = true;
 }
 
 var speech = new speechApi()
