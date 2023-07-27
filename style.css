@@ -38,7 +38,7 @@ body {
 
 p {
     color: #f0ffff;
-    font-size: 12px;
+    font-size: 1rem;
     margin: 0px;
     padding: 0;
     text-align: center;
@@ -47,7 +47,7 @@ p {
 
 #msg {
     color: #0c0e0c;
-    font-size: 2rem;
+    font-size: 1rem;
     margin: 0px;
     padding: 0;
     
