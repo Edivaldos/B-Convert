@@ -20,6 +20,11 @@ body {
     background-color: #66e9a3;
 }
 
+#nav-item active {
+    font-size: 12px;
+    font-weight: bold;
+}
+
 #menu {
     position: fixed;
     top: 0;
