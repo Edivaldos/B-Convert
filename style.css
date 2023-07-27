@@ -15,6 +15,12 @@
     background-color: #66e9a3;
 }
 
+#menu {
+    position: fixed;
+    top: 0;
+    left:0;
+}
+
 p {
     color: #f0ffff;
     font-size: 3rem;
