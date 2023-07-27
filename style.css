@@ -12,6 +12,7 @@ body {
 
 #nav {
     padding: 0;
+    background-color: #0000FF;
 }
 
 .speech {
@@ -34,7 +35,6 @@ body {
     top: 0;
     left:0;
     width: 100%;
-    color: #0000FF;
 }
 
 p {
