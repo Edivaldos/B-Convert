@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    padding-top: 20px;
+    padding-top: 50px;
 }
 
 * {
@@ -22,7 +22,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #0000FF;
+    background-color: #363636;
 }
 
 #nav-item active {
@@ -34,7 +34,7 @@ body {
     top: 0;
     left:0;
     width: 100%;
-    background-color: #363636;
+    background-color: #0000FF;
 }
 
 p {
