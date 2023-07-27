@@ -13,7 +13,6 @@ body {
 .speech {
     width: 100vw;
     height: 100vh;
-    margin-top: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,6 +36,7 @@ p {
     color: #f0ffff;
     font-size: 2rem;
     margin: 0px;
+    margin-top: 0;
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
 }
