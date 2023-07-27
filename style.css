@@ -1,6 +1,9 @@
+body {
+    padding: 74px;
+    margin: 0;
+}
 
 * {
-    padding: 74px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
