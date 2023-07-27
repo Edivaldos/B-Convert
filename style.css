@@ -10,6 +10,10 @@ body {
     font-family: monospace;
 }
 
+#nav {
+    padding: 0;
+}
+
 .speech {
     width: 100vw;
     height: 100vh;
