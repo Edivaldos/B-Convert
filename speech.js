@@ -33,7 +33,7 @@ class speechApi {
 
 var speech = new speechApi()
 
-var titulo = ("Fala convertida em texto com o B-Convert");
+var titulo = ("Fala convertida em texto com o VozConversor");
 
 
     btnParar.disabled = true
@@ -65,7 +65,7 @@ btnParar.addEventListener('click', () => {
 
 btnBaixarPDF.addEventListener('click', () => {
     var text = textarea.value
-    //var filename = "B-Convert.pdf"
+    //var filename = "VozConversor.pdf"
 
     // Instanciar o jsPDF
     var doc = new jsPDF();
@@ -79,7 +79,7 @@ btnBaixarPDF.addEventListener('click', () => {
     doc.setFontSize(12).text(linhas, 16, 16);
     
     // Nomear e salvar PDF
-    doc.save('B-Convert.pdf');
+    doc.save('VozConversor.pdf');
 
     //download(doc, filename)
     
@@ -89,7 +89,7 @@ btnBaixarPDF.addEventListener('click', () => {
 
 btnBaixarDoc.addEventListener('click', () => {
     var text = textarea.value
-    var filename = "B-Convert.doc"
+    var filename = "VozConversor.doc"
 
     download(titulo + "\n\n" + text, filename)
 
